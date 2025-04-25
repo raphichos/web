@@ -64,7 +64,7 @@ p {
 
 .conteudo {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   max-width: 1000px;
 }
 
@@ -92,6 +92,11 @@ p {
   position: absolute;
   top: 30px;
   right: -30px;
+}
+
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
 }
 
 .botao {
@@ -147,4 +152,48 @@ p {
   padding: 40px;
   box-sizing: border-box;
   margin-top: 60px;
+}
+
+@media (max-width: 1000px) {
+  .conteudo-vantagen {
+    grid-template-columns: 1fr;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .header {
+    gap: 30px;
+  }
+  .menu {
+    gap: 10px;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .introducao {
+    text-align: center;
+    justify-items: start;
+  }
+  .introducao::before {
+    display: none;
+  }
+  .subtitulo {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }
