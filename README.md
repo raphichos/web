@@ -3,20 +3,20 @@
 The main page for a future bike selling website.
 
 
-## 🚀 What I Learned
+## Technologies
 
 - HTML/CSS layout
 - Using Git + GitHub
 
   
-## 🛠️ How to Run
+## How to Run
 
 1. Download or clone the repository
 2. Open the project folder
 3. Double-click `index.html` (it will open in your browser)
 
 
-## 📁 Files
+## Files
 
 - `index.html` – main page
 - `style.css` – styles
